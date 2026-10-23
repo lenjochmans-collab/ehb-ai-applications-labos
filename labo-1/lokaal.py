@@ -14,3 +14,4 @@ def voorspel_met_lokaal_model(tekst):
 
 
 evalueer(voorspel_met_lokaal_model)
+evalueer(voorspel_met_lokaal_model,"nieuwe_berichten.csv")
