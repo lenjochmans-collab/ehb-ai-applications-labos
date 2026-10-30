@@ -21,7 +21,17 @@ Ticket: """
 # Opdracht: beschrijf hier het antwoord als JSON Schema: een object
 # met categorie, taal, klantnummer en factuurnummer.
 SCHEMA = {
-    "type": "object",
+    
+"type": "object",
+"properties": {
+    "categorie": {"type": "string"},
+    "taal": {"type": "string"},
+    "klantnummer": {},
+    "factuurnummer": {},
+ },
+ "required": ["categorie", "taal", "klantnummer", "factuurnummer"],
+"additionalProperties": False,
+
 }
 
 

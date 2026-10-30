@@ -39,3 +39,14 @@ def voorspel_met_cascade(tekst):
         "confidence": confidence,
     }
 evalueer(voorspel_met_cascade, "moeilijke_berichten.csv")
+
+
+
+
+def naarllm(confidence):
+    if (confidence) < 0.8:
+        return True
+    else:
+        return False
+
+naarllm("positief",0.5)
